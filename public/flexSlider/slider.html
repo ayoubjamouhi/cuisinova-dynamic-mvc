@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="charset=utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <!-- Demo CSS -->
+  <link rel="stylesheet" href="public/flexSlider/css/flexslider.css" type="text/css" media="screen" />
+
+</head>
+<body class="loading">
+
+      <div class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+  	    	    <img src="public/flexSlider/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="public/flexSlider/images/kitchen_adventurer_lemon.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="public/flexSlider/images/kitchen_adventurer_donut.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="public/flexSlider/images/kitchen_adventurer_caramel.jpg" />
+  	    		</li>
+          </ul>
+        </div>
+      </div>
+
+
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+  <!-- FlexSlider -->
+  <script defer src="public/flexSlider/js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+
+</body>
+</html>

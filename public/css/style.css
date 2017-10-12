@@ -1,0 +1,874 @@
+/* Start Main rulez*/
+*{
+	box-sizing: border-box;
+}
+
+/* Start Fonts */
+@font-face {
+    font-family: 'noticia_textregular';
+    src: url('fonts/noticiatext-regular-webfont.woff2') format('woff2'),
+         url('fonts/noticiatext-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('OpenSans-Regular-webfont.eot');
+    src: url('OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Regular-webfont.woff') format('woff'),
+         url('OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* End Fonts */
+body{
+	height: 2000px;
+}
+
+.container{
+	width: 82.2%;
+	margin: auto
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none
+}
+h3{
+	font-family: "noticia_textregular,Arial,Helvetica,sans-serif";
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+p{
+	margin: 0;
+	font-family: "open_sansregular";	
+}
+/* End Main rulez*/
+
+/* Start Header */
+header{
+
+}
+header .top-header{
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	position: relative;	
+}
+
+/* Start header/topheader/bar */
+
+/* in media queries */
+header .top-header .bar{
+	background-color: #838E7D;
+	color: #FFF;
+	width: 100%;
+	padding: 3px 0
+}
+header .top-header .bar a{color: #FFF;	}
+header .top-header .bar ul{
+	overflow: hidden;
+	width: 100%;
+}
+header .top-header .bar ul li{
+	float: left;
+	list-style: none;
+	overflow: hidden;
+}
+header .top-header .bar ul li i{
+	margin-right: 12px;
+	display: block;
+	float: left
+}
+header .top-header .bar ul li a{
+	text-decoration: none;
+	float: left;
+	display: block;
+}
+header .top-header .bar ul .sepa{margin: 0 4%}
+/* End header/topheader/bar */
+
+
+/* Start header/topheader/mailtel*/
+
+/* in media queries */
+header .top-header .mailtel{
+    background-color: #838E7D;
+    display: none;
+}
+header .top-header .mailtel ul{
+	width: 100%;
+	padding: 2px 0;
+	overflow: hidden;
+}
+header .top-header .mailtel ul li{
+	float: left;
+}
+header .top-header .mailtel ul li > a{
+	color: #FFF
+}
+header .top-header .mailtel ul li i{
+	color: #FFF;
+	margin-right: 3px
+}
+header .top-header .mailtel ul li a{
+
+}
+header .top-header .mailtel ul .sepa{
+	padding: 0 10px;
+	color: #FFF;
+}
+/* Start header/topheader/mailtel */
+
+/* Start header/topheader/menu */
+header .top-header .menu{
+	width: 100%;
+	overflow:hidden;
+	margin: auto;
+	background-color: #FFF
+}
+header .top-header .menu .logo{
+	float: left;
+	width: 19%;
+	position: relative;
+}
+header .top-header .menu .logo img{
+    width: 67%;
+    bottom: -20px;
+    position: relative;
+    left: 9px;
+}
+header .top-header .menu .center-menu{
+	float: left;
+	width: 58%;
+}
+header .top-header .menu .center-menu img{
+	display: block;
+	margin:auto;
+	margin-top: 10px;
+}
+header .top-header .menu .center-menu nav{
+
+}
+header .top-header .menu .center-menu nav ul{overflow: hidden;}
+header .top-header .menu .center-menu nav > ul > li{
+	float: left;
+	list-style: none;
+}
+header .top-header .menu .center-menu nav > ul > li > a{
+	display: block;
+    color: #111;
+    padding: 8px 8.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15.3px;
+    padding-bottom: 3px;
+    font-family: 'noticia_textregular';
+}
+header .top-header .menu .center-menu nav > ul > li:hover > a{
+	color: #FFF;
+	background-color: #BF7EB2;
+	display: block;
+    padding: 8px 8.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15.3px;
+    padding-bottom: 3px;
+}
+header .top-header .menu .center-menu nav > ul > li > ul{
+	position: absolute;
+	background-color: #FFF;
+	padding: 20px;
+	padding-right: 50px;
+	border-top: 3px solid #BF7EB2;
+    max-width: 537px;
+    width: 100%	
+}
+header .top-header .menu .center-menu nav > ul > li > ul.center-menu-ul-1{display: none}
+header .top-header .menu .center-menu nav > ul > li > ul.center-menu-ul-2{display: none}
+header .top-header .menu .center-menu nav > ul > li > ul.center-menu-ul-3{display: none}
+header .top-header .menu .center-menu nav > ul > li > ul > li{
+	list-style: none;
+	margin-bottom: 10px
+}
+header .top-header .menu .center-menu nav > ul > li > ul > li > i{
+	margin-right: 4px;
+	background-color: #BF7EB2;
+	color: #FFF;
+	padding: 5px;
+	border:1px solid #BF7EB2;
+	border-radius: 50%;
+	width: 23px;
+    height: 23px;
+    font-size: 15px;
+    padding: 4px;	
+}
+header .top-header .menu .center-menu nav > ul > li > ul > li > a{
+	text-decoration: none;
+	color: #111;
+	text-transform: uppercase;
+	font-size: 14px
+}
+header .top-header .menu .center-menu nav > ul > li > ul > li:hover > a{color: #BF7EB2}
+header .top-header .menu .right-menu{
+	float: left;
+	width: 23%;
+}
+header .top-header .menu .right-menu ul{
+	overflow: hidden;
+	position: relative;
+    bottom: -16px;
+    right: -11px;	
+}
+header .top-header .menu .right-menu ul li{
+	float: left;
+	list-style: none;
+	margin-right: 5px
+}
+header .top-header .menu .right-menu ul li a{
+	text-decoration: none;
+	color: #111
+}
+header .top-header .menu .right-menu ul li i{
+	display: block;
+    margin: auto;
+    text-align: center;
+    background-color: #BF7EB2;
+    width: 36px;
+    height: 36px;
+    font-size: 27px;
+    padding: 6px;
+    border-radius: 50%;
+    color: #FFF;
+    margin-bottom: 6px;
+}
+header .top-header .menu .right-menu ul li i:hover{	font-size: 30px;}
+header .top-header .menu .right-menu ul li span{
+	display: block;
+	margin: auto;
+	font-size: 9px;
+	text-transform: uppercase;
+	font-weight: bold;
+    text-align: center;	
+}
+header .top-header .menu .right-menu ul li a:hover{
+	
+}
+/* End header/topheader/menu */
+
+/* Start header/topheader/menu1 */
+header .top-header .menu1{
+	overflow: hidden;
+	width: 100%;
+	background-color: #EBE2DC;
+}
+header .top-header .menu1 .logo{
+	float: left;
+    width: 18%;
+    padding: 2px 5px 0px 5px;
+}
+header .top-header .menu1 .logo img{
+	width: 100%
+}
+header .top-header .menu1 .center-menu{
+	width: 76%;
+    margin-top: 6px;
+    float: left;
+}
+header .top-header .menu1 .center-menu a{
+	overflow: hidden;
+	color: #BF7EB2
+}
+header .top-header .menu1 .center-menu a i{
+	float: left;
+	padding-right: 5px
+}
+header .top-header .menu1 .center-menu a span{
+	float: left;
+	text-transform: uppercase;
+}
+header .top-header .menu1 .right-menu{
+	float: left;
+	width: 6%
+}
+header .top-header .menu1 .right-menu i{
+	display: block;
+	color: #FFF;
+    background-color: #c3c3c3;
+    width: 100%;
+    height: 44px;
+    margin: auto;
+    text-align: center;
+    padding-top: 9px;
+    font-size: 29px;
+}
+header .top-header .menu-hidden{
+	position: absolute;
+	background-color: #404040;
+	padding: 17px 30px;
+	width: 75%
+}
+header .top-header .menu-hidden ul{
+
+}
+header .top-header .menu-hidden ul li{
+	margin-bottom: 20px;
+}
+header .top-header .menu-hidden ul li a{
+	color: #FFF;
+	text-transform: uppercase;
+}
+/* End header/topheader/menu1 */
+
+header .slider{
+	overflow: hidden;
+    width: 100%;
+}
+/* End Header */
+
+/* Start Main */
+main{
+
+}
+main .lecoeur{
+	width: 100%;
+	max-width: 841px;
+	margin: auto;
+}
+main .lecoeur .top{
+	overflow: hidden;
+	width: 100%
+}
+main .lecoeur .top > div{
+	float: left;
+	width: 49%;
+	overflow: hidden;
+	margin-right: 1%;
+	background-color: #3A3B3D;
+}
+main .lecoeur .top > div .left{
+	float: left;
+	width: 55%;
+	padding: 5px 10px 47px 10px;
+	position: relative;
+} 
+main .lecoeur .top > div .left > h3,main .lecoeur h3{
+    color: #B1D6BE;
+    font-size: 24px;
+    text-align: center;
+} 
+main .lecoeur .top > div .left > p,main .lecoeur p{
+	color: #FFF
+}
+main .lecoeur .top > div .left > button{
+	position: absolute;
+	bottom: 0;
+	right: 12px;
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+	background-color: #BF7EB2;
+	border: 0;
+	padding: 5px 7px;
+	font-size: 14px;
+	cursor: pointer;
+}
+main .lecoeur .top > div .right{
+	float: right;
+	width: 45%
+} 
+main .lecoeur .top > div .right img{
+	width: 100%
+}
+main .lecoeur .bottom{
+	overflow: hidden;
+	margin-top: 13px
+}
+main .lecoeur .bottom > div{
+	width: 50%;
+	float: left;
+	background-color: #3A3B3D;
+    padding: 5px 17px 52px 17px;
+	position: relative;
+	overflow: hidden;
+}
+main .lecoeur .bottom > div > h3 {
+	
+}
+main .lecoeur .bottom > div > p {
+	
+}
+main .lecoeur .bottom > div > img {
+	display: block;
+	width: 100%;
+	margin-top: 3px
+}
+main .lecoeur .bottom > div > button {
+	position: absolute;
+	bottom: 13px;
+	right: 13px;
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+	background-color: #BF7EB2;
+	border: 0;
+	padding: 5px 7px;
+	font-size: 14px;
+	cursor: pointer;	
+}
+main .lecoeur .bottom img{
+	width: 50%;
+	float: left;
+	margin-top: 11px;
+}
+/* Start main/ensavoir */
+main .ensavoir{
+	margin-top: 6%
+}
+main .ensavoir ul{
+	overflow: hidden;
+	width: 100%
+}
+main .ensavoir ul li{
+	float: left;
+	width: 23%;
+	margin-right: 2%;
+	position: relative;
+    position: relative;
+    padding-bottom: 70px;	
+	max-height: 228px;    
+}
+main .ensavoir ul li a{
+
+}
+main .ensavoir ul li a i{
+    padding: 12px;
+    background-color: #BF7EB2;
+    border-radius: 50%;
+    font-size: 41px;
+    color: #FFF;
+    text-align: center;
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+}
+main .ensavoir ul li a h3{
+	text-align: center;
+	color: #BF7EB2;
+	margin-top: 13px;
+	margin-bottom: 13px;
+	font-size: 23px
+}
+main .ensavoir ul li p{
+	color: #666;
+	text-align:justify;
+}
+main .ensavoir ul li button{
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+	background-color: #BF7EB2;
+	border: 0;
+	padding: 5px 7px;
+	font-size: 14px;
+	cursor: pointer;
+	position: absolute;	
+    bottom: 0;
+    right: 0;	
+}
+/* End main/ensavoir */
+
+/* Start main/blocone */
+main .blocone{
+	overflow: hidden;
+	margin-top: 4%;
+	background-color: #5D5D5D;
+	padding-bottom: 14px;
+}
+main .blocone .info{
+	width: 67%;
+    float: left;
+    margin-right: 2%;
+}
+main .blocone .info h2{
+	color: #BF7EB2
+}
+main .blocone .info p{
+	color: #FFF;
+	line-height: 1.3
+}
+main .blocone .img{
+    width: 31%;
+    float: left;
+    margin-top: 25px;
+}
+main .blocone .img img{
+	width: 100%
+}
+/* End main/blocone */
+
+/* Start main/blocone1 */
+main .blocone1{
+	padding-bottom: 30px
+}
+main .blocone1 h2{
+	color: #BF7EB2	
+}
+main .blocone1 p{
+	color: #666;
+	padding-bottom: 20px;
+	line-height: 23px;	
+	font-size: 17px
+}
+main .blocone1 .bottom{
+	overflow: hidden;
+	width: 100%
+}
+main .blocone1 .bottom img{
+	float: left;
+	width: 20%;
+}
+main .blocone1 .bottom div{
+	float: left;
+	width: 78%;
+	margin-left: 2%
+}
+/* End main/blocone1 */
+
+/* Start footer */
+footer{
+
+}
+footer .footer1{
+	background-color: #282a2b;
+	padding: 10px 0px;
+	position: relative;
+}
+footer .footer1 ul{
+	overflow: hidden;
+}
+footer .footer1 ul li{
+	float: left;
+	width: 23%;
+	margin-right:2%;
+	overflow: hidden;
+}
+footer .footer1 ul li i{
+	float: left;
+    padding: 12px;
+    background-color: #BF7EB2;
+    border-radius: 50%;
+    font-size: 46px;
+    color: #FFF;
+    text-align: center;
+    display: block;
+    width: 65px;
+    height: 65px;
+    margin: auto;
+    margin-right: 8px;
+}
+footer .footer1 ul li span{
+	float: left;
+	color: #FFF;
+	padding-top: 15px;
+    font-size: 19px;
+}
+footer .footer1 > a{
+	position: absolute;
+    color: #FFF;
+    top: -25px;
+    background-color: #282a2b;
+    right: 121px;
+    padding: 3px 9px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+footer .footer1 > a:hover{text-decoration: underline;}
+footer .footer1 > a > i{color: #BF7EB2;}
+footer .footer1 > a > i:hover{color: #BF7EB2;text-decoration: underline;}
+
+footer .footer2{
+	background-color: #393B3C
+}
+footer .footer3{
+	background-color: #2C2E2F;
+	color:#FFF;
+	padding: 10px 0
+}
+/* End footer */
+
+/* End Main */
+
+/* Start Media queries */
+@media (min-width: 300px) {
+	header .top-header .mailtel{
+		display: block;
+	}
+	header .top-header .mailtel ul li:last-child,header .top-header .mailtel ul .sepa{
+		display: none;
+	}	
+	header .top-header .bar{
+		display: none;
+	}	
+	header .top-header .menu{
+		display: none;	
+	}
+	header .top-header .menu1{
+		display: block;	
+	}
+	header .top-header .menu1 .logo{
+		width: 45%
+	}	
+	header .top-header .menu1 .center-menu{
+		width: 40%
+	}
+	header .top-header .menu1 .right-menu{
+		width: 15%
+	}
+	header .top-header .menu-hidden{
+		display: block;
+	}
+
+	main .lecoeur .top > div{
+		width: 100%;
+		float: none;
+		background:none;
+	}	
+	main .lecoeur .top > div .left{
+		background-color: #3A3B3D;
+		float: none;
+		width: 100%;
+		padding: 5px 23px 47px 23px;
+	}
+	main .lecoeur .top > div .left > p, main .lecoeur p{
+		padding-bottom: 35px;
+	}
+	main .lecoeur .top > div .left > button{
+		bottom: 13px;
+	}
+	main .lecoeur .top > div .right{
+    	width: 100%;
+	}
+	main .lecoeur .top > div .right img{
+		display: block;
+    	margin: auto;
+		width: 58%;
+	}
+	main .lecoeur .bottom{
+		margin-top: 0
+	}
+	main .lecoeur .bottom img{
+		    width: 100%;
+	}
+	main .lecoeur .bottom > div{
+		float: none;
+		width: 100%;
+		margin-top: 11px;		
+	}
+	main .ensavoir ul li{
+		float: none;
+    	width: 100%;
+    	margin-bottom: 16px;
+	}
+	main .blocone .info{
+		width: 100%;
+    	float: none; 
+	}
+	main .blocone .img{
+		width: 100%;
+	}
+	main .blocone1 .bottom img {
+	    float: none;
+	    width: 100%;
+	}
+	main .blocone1 .bottom div{
+		float: left;
+		width: 100%;
+	}
+	footer .footer1 ul li{
+		margin: auto;
+		margin-bottom: 22px;
+		float: none;
+		width: 80% 
+	}
+}
+@media (min-width: 768px) {
+	header .top-header .mailtel{
+		display: block;
+	}
+	header .top-header .mailtel ul li:last-child,header .top-header .mailtel ul .sepa{
+		display: block;
+	}		
+	header .top-header .bar{
+		display: none;
+	}	
+	header .top-header .menu{
+		display: none;	
+	}
+	header .top-header .menu1{
+		display: block;	
+	}	
+	header .top-header .menu1 .logo{
+		width: 18%
+	}	
+	header .top-header .menu1 .center-menu{
+		width: 76%
+	}
+	header .top-header .menu1 .right-menu{
+		width: 6%
+	}
+	header .top-header .menu-hidden{
+		display: none;
+	}
+
+
+	main .lecoeur .top > div{
+		width: 100%;
+		float: none;
+		background:none;
+	}	
+	main .lecoeur .top > div .left{
+		background-color: #3A3B3D;
+		float: none;
+		width: 100%
+	}
+	main .lecoeur .top > div .left > p, main .lecoeur p{
+		padding-bottom: 80px;
+	}
+	main .lecoeur .top > div .left > button{
+		bottom: 13px;
+	}
+	main .lecoeur .top > div .right{
+    	width: 100%;
+	}
+	main .lecoeur .top > div .right img{
+		display: block;
+    	margin: auto;
+    	width: 30%
+	}
+	main .lecoeur .bottom{
+		margin-top: 0
+	}
+	main .lecoeur .bottom > div{
+		float: none;
+		width: 100%;
+		margin-top: 11px;		
+	}
+	main .ensavoir ul li{
+		float: none;
+    	width: 100%;
+	}
+	main .blocone .info{
+		width: 100%;
+    	float: none; 
+	}
+	main .blocone .img{
+		width: 66%;
+	}
+	main .blocone1 .bottom img {
+	    float: none;
+	    width: 40%;
+	}
+	main .blocone1 .bottom div{
+		float: left;
+		width: 78%;
+	}
+	footer .footer1 ul li{
+		margin: auto;
+		margin-bottom: 22px;
+		float: none;
+		width: 39% 
+	}
+}
+
+@media (min-width: 1200px){
+	header .top-header .mailtel{
+		display: none;
+	}
+	header .top-header .bar{
+		display: block;
+	}	
+	header .top-header .menu{
+		display: block;	
+		max-width: 1111px;
+	}
+	header .top-header .menu1{
+		display: none;	
+	}
+	header .top-header .menu-hidden{
+		display: none;
+	}
+
+
+	main .lecoeur .top > div{
+		float: left;
+		width: 49%;
+		background-color: #3A3B3D;
+	}	
+	main .lecoeur .top > div .left{
+		background-color: none;
+		float: left;
+		width: 55%;
+		padding: 5px 10px 47px 10px;
+	}
+	main .lecoeur .top > div .left > p, main .lecoeur p{
+		padding-bottom: 0;
+	}
+	main .lecoeur .top > div .left > button{
+		bottom: 0;
+	}
+	main .lecoeur .top > div .right{
+    	width: 45%;
+	}
+	main .lecoeur .top > div .right img{
+		display: block;
+    	margin: auto;
+    	width: 100%
+	}
+	main .lecoeur .bottom{
+		margin-top: 13px
+	}
+	main .lecoeur .bottom img{
+		width: 50%
+	}
+	main .lecoeur .bottom > div{
+		width: 50%;
+		float: left;
+	}
+	main .ensavoir ul li{
+		float: left;
+		width: 23%;
+	}
+	main .blocone .info{
+		width: 67%;
+    	float: left;
+	}
+	main .blocone .img{
+		width: 31%;
+	}
+	main .blocone1 .bottom img {
+	    float: left;
+		width: 20%;
+	}
+	main .blocone1 .bottom div{
+		float: left;
+		width: 78%;
+	}
+	footer .footer1 ul li{
+		float: left;
+		width: 23%;
+		margin-right:2%;
+	}
+}
+/* End Media queries */
