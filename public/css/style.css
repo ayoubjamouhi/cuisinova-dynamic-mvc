@@ -344,6 +344,7 @@ main .lecoeur{
 	width: 100%;
 	max-width: 841px;
 	margin: auto;
+	margin-top: 80px;
 }
 main .lecoeur .top{
 	overflow: hidden;
@@ -355,12 +356,13 @@ main .lecoeur .top > div{
 	overflow: hidden;
 	margin-right: 1%;
 	background-color: #3A3B3D;
+	margin-bottom: 10px;
+	position: relative;
 }
 main .lecoeur .top > div .left{
 	float: left;
 	width: 55%;
 	padding: 5px 10px 47px 10px;
-	position: relative;
 } 
 main .lecoeur .top > div .left > h3,main .lecoeur h3{
     color: #B1D6BE;
@@ -372,8 +374,8 @@ main .lecoeur .top > div .left > p,main .lecoeur p{
 }
 main .lecoeur .top > div .left > button{
 	position: absolute;
-	bottom: 0;
-	right: 12px;
+	bottom: 10px;
+	right: 200px;
 	margin: 0;
 	padding: 0;
 	color: #FFF;
@@ -640,22 +642,28 @@ footer .footer3{
 		display: block;
 	}
 
+	main .lecoeur{
+		margin-top: 2px
+	}
 	main .lecoeur .top > div{
 		width: 100%;
 		float: none;
 		background:none;
+		position: static;
 	}	
 	main .lecoeur .top > div .left{
 		background-color: #3A3B3D;
 		float: none;
 		width: 100%;
 		padding: 5px 23px 47px 23px;
+		position: relative;
 	}
 	main .lecoeur .top > div .left > p, main .lecoeur p{
 		padding-bottom: 35px;
 	}
 	main .lecoeur .top > div .left > button{
 		bottom: 13px;
+		right: 20px
 	}
 	main .lecoeur .top > div .right{
     	width: 100%;
@@ -732,16 +740,20 @@ footer .footer3{
 		display: none;
 	}
 
-
+	main .lecoeur{
+		margin-top: 5px
+	}
 	main .lecoeur .top > div{
 		width: 100%;
 		float: none;
 		background:none;
+		position: static
 	}	
 	main .lecoeur .top > div .left{
 		background-color: #3A3B3D;
 		float: none;
-		width: 100%
+		width: 100%;
+		position: relative;
 	}
 	main .lecoeur .top > div .left > p, main .lecoeur p{
 		padding-bottom: 80px;
@@ -810,23 +822,28 @@ footer .footer3{
 		display: none;
 	}
 
-
+	main .lecoeur{
+		margin-top: 80px
+	}
 	main .lecoeur .top > div{
 		float: left;
 		width: 49%;
 		background-color: #3A3B3D;
+		position: relative;
 	}	
 	main .lecoeur .top > div .left{
-		background-color: none;
 		float: left;
 		width: 55%;
-		padding: 5px 10px 47px 10px;
+		padding: 5px 10px 67px 10px;
+		max-height: 207px;
+		position: static;
 	}
 	main .lecoeur .top > div .left > p, main .lecoeur p{
 		padding-bottom: 0;
 	}
 	main .lecoeur .top > div .left > button{
-		bottom: 0;
+		bottom: 10px;
+		right: 200px
 	}
 	main .lecoeur .top > div .right{
     	width: 45%;

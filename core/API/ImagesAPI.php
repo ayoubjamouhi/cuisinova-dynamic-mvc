@@ -55,7 +55,7 @@ class ImagesAPI{
             $statment->execute();
 
             $oldpath = $name['tmp_name'];
-            $newpath ="images/".$name['name'];
+            $newpath ="public/imagesArticles/".$name['name'];
             move_uploaded_file($oldpath, $newpath);
 
             return true;
@@ -67,6 +67,34 @@ class ImagesAPI{
     {
         $id = (int)$this->pdo->lastInsertId();
         return $id;
+    }
+
+    public function selectImage($extra = '')
+    
+    {
+        
+        $statment = $this->pdo->prepare("SELECT * FROM `images` {$extra}");
+        $e = $statment->execute();
+
+        if(!$e)
+            return NULL;
+        
+        return $statment->fetchAll(PDO::FETCH_OBJ);
+    }
+
+
+    public function selectNameImageById($id)
+    
+    {
+        $_id = (int)$id;
+
+        $select = $this->selectImage("WHERE `img_id` = {$_id}");
+
+        if($select != NULL)
+            return $select[0];
+
+        else
+            return NULL;
     }
 
 }

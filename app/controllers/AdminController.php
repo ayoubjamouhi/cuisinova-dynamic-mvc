@@ -107,14 +107,17 @@ class AdminController
 
 		{
 
-
+			$values = [1,2,3];
+			
 			$insertImg = App::get('ImagesAPI')->insererImage($_FILES['fic']);
 
 			if($insertImg)
 			
 			{
-
-				$insertArticle = App::get('ArticleAPI')->insererArticle($_POST['titre'],$_POST['text'],App::get('ImagesAPI')->lastIdInserer());
+				if(in_array((int)$_POST['position'], $values))
+				{
+					$insertArticle = App::get('ArticleAPI')->insererArticle($_POST['titre'],$_POST['text'],(int)$_POST['position'],App::get('ImagesAPI')->lastIdInserer());
+				}
 				if($insertArticle)
 
 				{
@@ -127,7 +130,7 @@ class AdminController
 			}	
 			else
 				echo "Echec ajout img";
-
+			
 		}
 	}
 

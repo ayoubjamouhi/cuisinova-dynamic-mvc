@@ -11,8 +11,15 @@ class PagesController
 	public function home()
 	
 	{
+		/*
+			Article par rapport chaque position dans l'accueil
+		*/
+		$articlesPosition1 =  App::get('ArticleAPI')->selectWithPosition(1);
+		$articlesPosition2 =  App::get('ArticleAPI')->selectWithPosition(2);
+		$articlesPosition3 =  App::get('ArticleAPI')->selectWithPosition(3);
 
-			return view('index');
+
+		return view('index','',compact('articlesPosition1','articlesPosition2','articlesPosition3'));
 	}
 
 	public function about()

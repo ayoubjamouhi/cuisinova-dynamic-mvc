@@ -232,41 +232,43 @@
 
 	<div class="lecoeur">
 		<div class="top">
-
+			
+			<?php 
+				use App\Core\App;
+				foreach($articlesPosition1 as $article):
+				$image2 = App::get('ImagesAPI')->selectNameImageById($article->id_img);
+				
+			?>
 			<div>
 				<div class="left">
-					<h3>LA CONCEPTION DE MA CUISINE SUR-MESURE</h3>
-					<p>Il n’est pas nécessaire d’être ingénieur pour commencer la conception de votre cuisine. La première étape...</p>
+					<h3><?php echo $article->titre; ?></h3>
+					<p><?php echo substr(strip_tags($article->text),0,200); ?></p>
 					<button>Lire la suite ></button>
 				</div>
 				<div class="right">
-					<img src="public/images/img-ma-conception.jpg">
+					<img height="210px" src="public/imagesArticles/<?php echo $image2->img_nom; ?>">
 				</div>
 			</div>
-
-			<div>
-				<div class="left">
-					<h3>LA CONCEPTION DE MA CUISINE SUR-MESURE</h3>
-					<p>Il n’est pas nécessaire d’être ingénieur pour commencer la conception de votre cuisine. La première étape...</p>
-					<button>Lire la suite ></button>
-				</div>
-				<div class="right">
-					<img src="public/images/img-ma-conception.jpg">
-				</div>
-			</div>			
+			<?php endforeach; ?>
+			
 		</div>
 		<div class="bottom">
+
+			<?php 
+				foreach($articlesPosition2 as $article):
+				$image2 = App::get('ImagesAPI')->selectNameImageById($article->id_img);
+			?>	
 			<div>
-				<h3>LE TOP DES VENTES</h3>
+				<h3><?php echo $article->titre; ?></h3>
 				
-				<p>Si vous êtes en quête d’une cuisine équipée et à prix bas pour satisfaire entièrement vos exigences ...</p>
+				<p><?php echo substr(strip_tags($article->text),0,200); ?></p>
 				
-				<img src="public/images/image-index-top-des-ventes.jpg">
+				<img height="71px" src="public/imagesArticles/<?php echo $image2->img_nom; ?>">
 
 				<button>Lire la suite ></button>
-
 			</div>	
-			<img src="public/images/VIGNETTE-VENTE-FLASH.jpg">		
+			<img src="public/imagesArticles/<?php echo $image2->img_nom; ?>">
+			<?php endforeach; ?>		
 		</div>
 	</div>
 

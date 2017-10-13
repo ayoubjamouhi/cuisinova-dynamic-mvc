@@ -25,9 +25,17 @@
 			
 			<div>
 				<span>Text</span>
-				<textarea id="froala-editor" name="text">Initialize the Froala WYSIWYG HTML Editor on a textarea.</textarea>
+				<textarea id="froala-editor" name="text" required=""></textarea>
 			</div>
-
+			<div>
+				<span>Choisis une categorie</span><br>
+				<select name="position" required="">
+				  <option value="0">Select</option> 
+				  <option value="1">position1</option> 
+				  <option value="2">position2</option>
+				  <option value="3">position3</option>
+				</select>
+			</div>
 			<div>
 				<span>Image</span><br>
 				<input type="file" name="fic" size=50 required=""/>
